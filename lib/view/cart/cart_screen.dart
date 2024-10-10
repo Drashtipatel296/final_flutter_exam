@@ -55,9 +55,6 @@ class CartPage extends StatelessWidget {
                       ),
                       onPressed: () async {
                         await dbService.deleteProduct(product.id);
-                        Get.snackbar(
-                            'Removed', '${product.name} removed from cart');
-                        Get.forceAppUpdate();
                       },
                     ),
                   ),
